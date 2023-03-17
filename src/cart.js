@@ -120,8 +120,8 @@ $stripe.addEventListener("click", () => {
     .redirectToCheckout({
       lineItems: lines,
       mode: "payment",
-      successUrl: "http://localhost:5173/success.html",
-      cancelUrl: "http://localhost:5173/cancel.html",
+      successUrl: "https://curious-truffle-ce9ba8.netlify.app/success.html",
+      cancelUrl: "https://curious-truffle-ce9ba8.netlify.app/cancel.html",
     })
     .then((res) => {
       if (res.error) {
