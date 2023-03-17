@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Candy Koa - Japón</title>
+  <link rel="icon" href="assets/logo-letras.png" type="image/x-icon" />
+</head>
+<body class="bg-white w-full">
+  <!--Header-->
+  <header
+    class="bg-[url('assets/chuches/nubes.jpg')] bg-center w-full sm:w-auto md:w-auto h-48 md:h-64 lg:h-96 bg-cover bg-no-repeat">
+    <!--Logo-header-->
+      <div class="w-12 h-12 flex justify-end md:absolute md:right-5 hidden sm:hidden md:block">
+        <a href="cart.html"><img id="carrito" class="w-10 h-auto md:w-12" src="assets/icon/carrito.png" alt="carrito"></a>
+      </div>
+    <div class="flex flex-col items-center relative top-2">
+      <img class="w-40 h-auto md:w-56 md:h-56" src="assets/logo-letras.png" alt="Logo" />
+    </div>
+    <div class="flex justify-end md:hidden lg:hidden lg:block mr-5 md:mt-2">
+      <a href="cart.html"><img id="carrito" class="w-8 h-auto md:w-12 md:h-auto lg:w-12 lg:h-auto" src="assets/icon/carrito.png" alt="carrito"></a>
+    </div>
+  </header>
+  <!--Migas de pan-->
+  <nav class="flex px-5 py-3 text-pink-800 text-xs md:ml-5" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+      <li class="inline-flex items-center">
+        <a href="index.html" class="inline-flex items-center text-sm font-medium text-pink-700 hover:text-pink-600 dark:text-black dark:hover:text-pink">
+          <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+            </path>
+          </svg>Página principal
+        </a>
+      </li>
+      <li>
+        <div class="flex items-center">
+          <svg aria-hidden="true" class="w-6 h-6 text-pink-800" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <a href="productList.html"
+            class="ml-1 text-sm font-medium text-pink-700 hover:text-pink-600 md:ml-2 dark:text-black dark:hover:text-pink">Japón</a>
+        </div>
+      </li>
+      <li aria-current="page">
+        <div class="flex items-center">
+          <svg aria-hidden="true" class="w-6 h-6 text-pink-800" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="ml-1 text-sm font-medium text-pink-800 md:ml-2">Producto</span>
+        </div>
+      </li>
+    </ol>
+  </nav>
+  <!--Info-producto:img, texto, precio-->
+  <!--Padre de producto-->
+  <div class="sm:w-full md:w-full flex-col items-center inline-flex justify-center md:gap-5 mb-9" id="container">
+
+  </div>
+  <!--Anuncio novedades redes-->
+  <div
+    class="bg-[url('assets/chuches/piruleta3.jpeg')] w-auto lg:w-full h-24 md:h-48 lg:h-88 bg-cover bg-no-repeat object-top flex flex-col items-center justify-center">
+    <h1
+      class="text-white text-xs sm:text-sm md:text-xl lg:text-4xl text-center md:w-72 lg:w-96 ml-48 md:ml-88 lg:ml-96 mr-1 lg:mt-3">
+      ¡Síguenos en nuestras redes y no te pierdas las novedades!
+    </h1>
+    <a href="https://www.instagram.com/candykoaweb/" target="_blank">
+      <img class="w-8 h-auto sm:w-8 md:w-10 sm:h-auto md:h-auto ml-48 md:ml-48 lg:ml-96 lg:mt-1" src="assets/icon/instagram2.jpeg"
+        alt="Instagram"/></a>
+  </div>
+  <!--Productos recomendados + footer-->
+  <div class="flex flex-col justify-center items-center gap-6">
+    <h1 class="self-start text-sm md:text-lg text-pink-800 font-bold ml-5 mt-5">
+      Productos recomendados
+    </h1>
+    <!--Productos-->
+    <div id="recomended"
+      class="flex flex-col sm:flex-col lg:flex-row lg:gap-10 gap-7 md:gap-3 md:h-96 lg:mt-5 mb-10 w-auto">
+      <!--Productos-->
+    </div>
+  </div>
+  <!--footer con redes-->
+  <footer class="w-full p-4 bg-blue-200 bg-opacity-40">
+    <div class="md:flex md:justify-between text-sm items-center">
+      <div class="mb-3 md:mb-0">
+        <a href="index.html" class="flex items-center justify-center">
+          <img src="assets/logo-letras.png" class="w-32 h-32 md:mr-3" alt="Logo CandyKoa" />
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-4 sm:gap-5 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">
+            Sobre nosotros
+          </h2>
+          <ul class="">
+            <li class="mb-2 md:mb-4">
+              <a href="info.html" class="hover:underline">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="productList.html" class="hover:underline">Nuestros productos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">
+            Síguenos
+          </h2>
+          <ul class="">
+            <li class="mb-2 md:mb-4">
+              <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-3 md:mb-6 text-sm font-semibold text-blue-400 uppercase">
+            Legal
+          </h2>
+          <ul class="">
+            <li class="mb-2 md:mb-4">
+              <a href="construccion.html" class="hover:underline">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="construccion.html" class="hover:underline">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>.
+        All Rights Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a href="mailto:candykoaweb@gmail.com" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/gmail2.jpeg" alt="Gmail" />
+        </a>
+        <a href="https://www.instagram.com/candykoaweb/" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/instagram2.jpeg"
+            alt="Instagram" />
+        </a>
+        <a href="https://twitter.com/CandyKoa_" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/twitter2.webp"
+            alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="details.js"></script>
+</body>
+
+</html>

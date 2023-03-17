@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CandyKoa</title>
+  <link rel="icon" href="assets/logo-letras.png" type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="bg-white w-full md:w-full lg:w-full">
+  <!--Imagen de header-->
+  <header class="bg-[url('/assets/chuches/nubes.jpg')] bg-center md:w-auto lg:w-auto w-full h-96 bg-cover
+  bg-no-repeat object-top">
+    <!--Menú-->
+    <nav class="flex flex-row min-h-[10vh] md:justify-center md:flex-row justify-between md:items-center w-full">
+      <div
+        class="md:static absolute md:min-h-fit left-0 md:top-[-100%] md:w-auto w-auto flex justify-center items-center px-5 font-bold text-stone-50">
+        <!--Categorías menú-->
+        <ul
+          class="flex md:flex-row flex-row justify-center mt-5 items-center md:items-center md:gap-10 gap-4 text-black">
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="assets/icon/japanflag.jpeg" alt="Bandera de Japón">
+              <a class="md:hover:text-pink-500" href="productList.html">Dulces de Japón</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="assets/icon/eeuu.jpeg" alt="Bandera de EEUU">
+              <a class="md:hover:text-pink-500" href="construccion.html">Dulces de EEUU</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="assets/icon/mexico.jpeg" alt="Bandera de México">
+              <a class="md:hover:text-pink-500" href="construccion.html">Dulces de México</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col text-center items-center">
+              <img class="w-9" src="assets/icon/europe.jpeg" alt="Bandera de Europa">
+              <a class="md:hover:text-pink-500" href="construccion.html">Dulces de Europa</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col items-center hidden sm:block ">
+              <a href="cart.html"><img id="carrito" class="w-12" src="assets/icon/carrito.png" alt="carrito"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Logo CandyKoa del header-->
+    <div class="flex flex-col items-center md:items-center md:relative translate-y-12 md:top-4">
+      <img class="w-36 h-auto md:w-56" src="assets/logo-letras.png" alt="Logo">
+    </div>
+    <div class="flex justify-end md:right-5 sm:hidden md:hidden md:block lg:hidden lg:block translate-y-20">
+      <a href="cart.html"><img id="carrito" class="w-10 h-auto md:w-12" src="assets/icon/carrito.png" alt="carrito"></a>
+    </div>
+  </header>
+  <!--Migas de pan-->
+  <nav class="flex px-5 py-3" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3 md:ml-16">
+      <li class="inline-flex items-center">
+        <a href="index.html" class="inline-flex items-center text-sm font-medium hover:text-pink-600">
+          <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+            </path>
+          </svg>Página principal
+        </a>
+      </li>
+      <li aria-current="page">
+        <div class="flex items-center">
+          <svg aria-hidden="true" class="w-6 h-6 text-pink-800" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="ml-1 text-sm font-medium text-pink-800 md:ml-2">Japón</span>
+        </div>
+      </li>
+    </ol>
+  </nav>
+  <!-- Tarjetas de Productos -->
+  <div class="flex lg:justify-center justify-center">
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-24 w-full lg:w-7/12 md:gap-10 lg:mt-16 lg:mb-36 mt-5 mx-10 mb-10"
+      id="container">
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="w-full p-4 bg-blue-200 bg-opacity-40 sm:p-6 md:h-72">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="index.html" class="flex items-center">
+          <img src="assets/logo-letras.png" class="h-32 mr-3" alt="Logo CandyKoa" />
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Sobre nosotros</h2>
+          <ul class="">
+            <li class="mb-4">
+              <a href="info.html" class="hover:underline">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="productList.html" class="hover:underline">Nuestros productos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Síguenos</h2>
+          <ul class="">
+            <li class="mb-4">
+              <a href="https://www.instagram.com/candykoaofficial/" class="hover:underline ">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/CandyKoa_" class="hover:underline">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-blue-400 uppercase">Legal</h2>
+          <ul class="">
+            <li class="mb-4">
+              <a href="construccion.html" class="hover:underline">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="construccion.html" class="hover:underline">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blue-300 sm:mx-auto lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm sm:text-center">© 2023 <a href="index.html" class="hover:underline">CandyKoa™</a>. All Rights
+        Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <a href="mailto:candykoaweb@gmail.com" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/gmail2.jpeg" alt="Gmail" />
+        </a>
+        <a href="https://www.instagram.com/candykoaweb/" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/instagram2.jpeg"
+            alt="Instagram" />
+        </a>
+        <a href="https://twitter.com/CandyKoa_" class="text-white">
+          <img class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" src="assets/icon/twitter2.webp"
+            alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!--template para creación de cartas de producto  -->
+  <template id="#userTemplate" class="lg:ml-10">
+    <div
+      class="sm:w-80 w-auto flex flex-row md:flex-row lg:flex-col gap-2 border-1 border-gray-100 rounded-lg shadow-lg lg:shadow-xl lg:w-60 lg:h-72 lg:hover:scale-110 md:hover:scale-110 md:hover:ease-linear duration-150 ease-in">
+      <img class="w-20 h-20 lg:w-full lg:h-40 rounded-l-lg lg:rounded-t-lg lg:rounded-bl-none" src=""
+        alt="imagen-producto" id="productImg">
+      <div class="flex flex-row items-center flex-end">
+        <div class="w-20 md:w-28 flex flex-col lg:p-4 gap-2">
+          <h2><a class="font-bold hover:text-red-500" href="details.html?id=" id="templateh1"></a></h2>
+          <h3 class="font-semibold" id="templateh3"></h3>
+        </div>
+        <div class="w-auto flex justify-end ml-12 md:ml-2 lg:ml-20 ">
+        <img id="addButton" data-value="" data-image="" data-name="" data-price="" data-code=""
+          class="w-8 h-8 md:w-8 md:h-8 cursor-pointer hover:invert"
+          src="assets/icon/carrito-de-compra-anadir.png" alt="Comprar">
+        </div>
+      </div>
+    </div>
+  </template>
+  <script type="module" src="productList.js"></script>
+</body>
+
+</html>
