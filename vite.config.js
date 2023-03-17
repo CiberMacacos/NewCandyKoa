@@ -12,9 +12,9 @@ export default {
       input: {
         main: resolve("src/index.html"),
         construction: resolve("src/construccion.html"),
-        carrito: resolve("src/carrito.html"),
-        listaproductos: resolve("src/listaproductos.html"),
-        detalles: resolve("src/detalle.html"),
+        carrito: resolve("src/cart.html"),
+        listaproductos: resolve("src/productList.html"),
+        detalles: resolve("src/details.html"),
         info: resolve("src/info.html"),
         success: resolve("src/success.html"),
         cancel: resolve("src/cancel.html")
